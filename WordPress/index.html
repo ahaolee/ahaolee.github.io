@@ -54,7 +54,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="在树莓派上安装WordPress一、安装LAMP，即Linux、Apache、MySQL、PHP1、安装Linux环境 如果你的树莓派已经按照说明安装了系统并启动设备，那么你的Linux环境就完成了。接下来要安装Apache、MySQL、PHP，安装程序需要连接国外的软件镜像源，因为我们在国内，国内的网络环境连接国外的镜像源下载软件的速度将会很慢，所以我们需要为树莓派更换软件镜像源。  设置树莓派">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-29T13:13:26.696Z">
+<meta property="og:updated_time" content="2019-12-01T10:05:19.867Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://ahaolee.xyz/WordPress/">
@@ -259,16 +259,15 @@
 <li><p>设置树莓派的镜像源地址只需要编辑镜像源地址文件，然后更新镜像源软件列表。树莓派的镜像源地址文件是/etc/apt/sources.list文件，使用</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sudo nano /et/apt/sources.list</span></pre></td></tr></table></figure>
 
-<p>来编辑sources.list文件，操作方向键将光标移动到文件内容末尾，然后删除所有内容。然后将下面内容粘贴到文件中。</p>
+<p>  来编辑sources.list文件，操作方向键将光标移动到文件内容末尾，然后删除所有内容。然后将下面内容粘贴到文件中。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ jessie main non-free contrib</span></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<p>​    然后按ctrl+x离开文件，提示是否保存，按Y确认保存。然后执行命令</p>
+<p>​      然后按ctrl+x离开文件，提示是否保存，按Y确认保存。然后执行命令</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span></pre></td></tr></table></figure>
 
-<p> 更新软件列表，即可成功修改软件镜像源了。 </p>
-<ul>
+<pre><code>更新软件列表，即可成功修改软件镜像源了。 </code></pre><ul>
 <li><p>安装vim编辑器， vim编辑器是Linux系统中非常方便使用的编辑器，使用命令 来安装vim编辑器。  </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sudo apt-get install vim</span></pre></td></tr></table></figure>
 
@@ -466,7 +465,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -496,7 +495,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
